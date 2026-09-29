@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDLC Using AI</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        .intro {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .stages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .stage {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .stage:hover {
+            transform: translateY(-5px);
+        }
+
+        .stage h2 {
+            color: #172554;
+            margin-bottom: 10px;
+        }
+
+        .stage p {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .ai {
+            background: #eef2ff;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        button {
+            background: #172554;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #2563eb;
+        }
+
+        #result {
+            background: white;
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 12px;
+            display: none;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #172554;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>SDLC Using Artificial Intelligence</h1>
+    <p>Software Development Life Cycle with AI Assistance</p>
+</header>
+
+<div class="container">
+
+    <div class="intro">
+        <h2>What is SDLC?</h2>
+        <p>
+            SDLC stands for Software Development Life Cycle.
+            It is a step-by-step process used to develop software.
+            AI can assist developers in every stage of the SDLC.
+        </p>
+    </div>
+
+    <div class="stages">
+
+        <!-- Stage 1 -->
+        <div class="stage">
+            <h2>1. Planning</h2>
+
+            <p>
+                Define the project goal, users, scope and resources.
+            </p>
+
+            <div class="ai">
+                <b>AI Assistance:</b>
+                <p>
+                    AI can generate project ideas, timelines,
+                    objectives and development plans.
+                </p>
+            </div>
+
+            <button onclick="showStage(1)">
+                View AI Output
+            </button>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="stage">
+            <h2>2. Requirement Analysis</h2>
+
+            <p>
+                Identify what the software must do and
+                what users need.
+            </p>
+
+            <div class="ai">
+                <b>AI Assistance:</b>
+                <p>
+                    AI can convert user requirements into
+                    functional and non-functional requirements.
+                </p>
+            </div>
+
+            <button onclick="showStage(2)">
+                View AI Output
+            </button>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="stage">
+            <h2>3. Design</h2>
+
+            <p>
+                Create the user interface, system structure
+                and navigation flow.
+            </p>
+
+            <div class="ai">
+                <b>AI Assistance:</b>
+                <p>
+                    AI can suggest UI layouts, color combinations,
+                    components and user flows.
+                </p>
+            </div>
+
+            <button onclick="showStage(3)">
+                View AI Output
+            </button>
+        </div>
+
+        <!-- Stage 4 -->
+        <div class="stage">
+            <h2>4. Development</h2>
+
+            <p>
+                Developers write the actual software code.
+            </p>
+
+            <div class="ai">
+                <b>AI Assistance:</b>
+                <p>
+                    AI can generate HTML, CSS and JavaScript,
+                    explain code and help fix errors.
+                </p>
+            </div>
+
+            <button onclick="showStage(4)">
+                View AI Output
+            </button>
+        </div>
+
+        <!-- Stage 5 -->
+        <div class="stage">
+            <h2>5. Testing</h2>
+
+            <p>
+                Check the software for errors and verify
+                that all features work correctly.
+            </p>
+
+            <div class="ai">
+                <b>AI Assistance:</b>
+                <p>
+                    AI can generate test cases, identify bugs
+                    and suggest corrections.
+                </p>
+            </div>
+
+            <button onclick="showStage(5)">
+                View AI Output
+            </button>
+        </div>
+
+        <!-- Stage 6 -->
+        <div class="stage">
+            <h2>6. Deployment</h2>
+
+            <p>
+                Make the completed software available
+                to users.
+            </p>
+
+            <div class="ai">
+                <b>AI Assistance:</b>
+                <p>
+                    AI can provide deployment steps and
+                    help troubleshoot hosting problems.
+                </p>
+            </div>
+
+            <button onclick="showStage(6)">
+                View AI Output
+            </button>
+        </div>
+
+        <!-- Stage 7 -->
+        <div class="stage">
+            <h2>7. Maintenance</h2>
+
+            <p>
+                Monitor the software and continuously
+                improve it after deployment.
+            </p>
+
+            <div class="ai">
+                <b>AI Assistance:</b>
+                <p>
+                    AI can analyze bugs, suggest updates
+                    and recommend improvements.
+                </p>
+            </div>
+
+            <button onclick="showStage(7)">
+                View AI Output
+            </button>
+        </div>
+
+    </div>
+
+    <div id="result">
+        <h2 id="resultTitle"></h2>
+        <p id="resultText"></p>
+    </div>
+
+</div>
+
+<footer>
+    <p>SDLC Using AI | HTML + CSS + JavaScript</p>
+</footer>
+
+
+<script>
+
+    function showStage(stage) {
+
+        let title = "";
+        let text = "";
+
+        if (stage === 1) {
+            title = "AI Output - Planning";
+            text = "AI analyzes the project idea and helps create objectives, scope, timeline and resource requirements.";
+        }
+
+        else if (stage === 2) {
+            title = "AI Output - Requirement Analysis";
+            text = "AI converts user requirements into functional requirements, non-functional requirements and feature checklists.";
+        }
+
+        else if (stage === 3) {
+            title = "AI Output - Design";
+            text = "AI suggests page layouts, navigation, UI components, responsive designs and user experience improvements.";
+        }
+
+        else if (stage === 4) {
+            title = "AI Output - Development";
+            text = "AI assists developers by generating HTML, CSS and JavaScript code, explaining code and identifying programming errors.";
+        }
+
+        else if (stage === 5) {
+            title = "AI Output - Testing";
+            text = "AI can create test cases, identify possible bugs and suggest corrections for JavaScript and user interface problems.";
+        }
+
+        else if (stage === 6) {
+            title = "AI Output - Deployment";
+            text = "AI can guide developers through GitHub Pages or other hosting deployment steps and help troubleshoot deployment errors.";
+        }
+
+        else if (stage === 7) {
+            title = "AI Output - Maintenance";
+            text = "AI can analyze reported issues, suggest new features, improve performance and help maintain the application.";
+        }
+
+        document.getElementById("resultTitle").innerText = title;
+        document.getElementById("resultText").innerText = text;
+
+        document.getElementById("result").style.display = "block";
+
+        window.scrollTo({
+            top: document.getElementById("result").offsetTop,
+            behavior: "smooth"
+        });
+    }
+
+</script>
+
+</body>
+</html>
